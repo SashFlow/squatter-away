@@ -18,11 +18,11 @@ export default function SmbOperatorsPage() {
       path="/for/smb-operators"
       h1="Consistent diligence for co-living, sublets, and short-stay"
       description=""
-      intro="Co-living operators, roommate-matching platforms, and short-stay managers face a unique challenge: high turnover, shared spaces, and applicants who don't fit traditional screening molds. Squatter Away delivers the same rigorous verification at the speed your business demands."
+      intro="Co-living operators, roommate-matching platforms, and short-stay managers face a unique challenge: high turnover, shared spaces, and applicants who don't fit traditional screening molds. Tenant Radar delivers the same rigorous verification at the speed your business demands."
       sections={[
         {
           heading: "Screening beyond the standard lease",
-          body: "Roommate matching, co-living, and furnished sublets often involve applicants with non-traditional income, shorter intended stays, or limited credit history. Squatter Away synthesizes employment, banking behavior, identity, and social signals — giving you a fuller picture than a credit pull alone.",
+          body: "Roommate matching, co-living, and furnished sublets often involve applicants with non-traditional income, shorter intended stays, or limited credit history. Tenant Radar synthesizes employment, banking behavior, identity, and social signals — giving you a fuller picture than a credit pull alone.",
         },
         {
           heading: "Scale without hiring underwriters",
@@ -40,7 +40,7 @@ export default function SmbOperatorsPage() {
         },
         {
           q: "Can we screen international applicants?",
-          a: "Squatter Away is optimized for the U.S. rental market. International applicant support is on our roadmap — founding batch members help shape priority.",
+          a: "Tenant Radar is optimized for the U.S. rental market. International applicant support is on our roadmap — founding batch members help shape priority.",
         },
         {
           q: "What verification signals are included?",

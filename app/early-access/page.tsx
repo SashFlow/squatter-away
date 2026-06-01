@@ -11,7 +11,7 @@ import {
   Loader2,
   Mail,
 } from "lucide-react";
-import { SquatterAwayLogo } from "@/components/logo";
+import { TenantRadarLogo } from "@/components/logo";
 import { toast } from "sonner";
 
 // ---------- Data ----------
@@ -622,7 +622,7 @@ export function EarlyAccessSurvey() {
           <SectionShell
             kicker="Section 8 · Stay in the loop"
             title="Where do we send your founding-batch invite?"
-            subtitle="We only contact you about Squatter Away — early access, your sample report, and a 1:1 if you opted into one."
+            subtitle="We only contact you about Tenant Radar — early access, your sample report, and a 1:1 if you opted into one."
           >
             <div className="space-y-3">
               <QuestionLabel>Name</QuestionLabel>
@@ -738,7 +738,7 @@ export function EarlyAccessSurvey() {
           </h1>
           <p className="mt-4 max-w-md text-base leading-[1.6] text-muted-foreground">
             Thank you — every answer goes directly to the people building
-            Squatter Away. We'll be in touch soon.
+            Tenant Radar. We'll be in touch soon.
           </p>
           <Link
             href="/"
@@ -814,7 +814,7 @@ export function EarlyAccessSurvey() {
             <ArrowLeft className="h-4 w-4" />{" "}
             <span className="text-sm font-medium">Home</span>
           </Link>
-          <SquatterAwayLogo size="sm" variant="light" />
+          <TenantRadarLogo size="sm" variant="light" />
           <div className="hidden text-xs font-semibold text-muted-foreground sm:flex sm:items-center sm:gap-1.5">
             <Sparkles className="h-3.5 w-3.5 text-lavender" />
             Founding batch

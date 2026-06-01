@@ -45,8 +45,8 @@ export default function WelcomeTemplate({
               </Column>
               <Column>
                 <Text style={headerWordmark}>
-                  Squatter
-                  <span style={{ color: emailBrand.lavender }}>Away</span>
+                  Tenant
+                  <span style={{ color: emailBrand.lavender }}>Radar</span>
                 </Text>
                 <Text style={headerTagline}>{siteConfig.tagline}</Text>
               </Column>
@@ -84,7 +84,7 @@ export default function WelcomeTemplate({
 
             <Section style={ctaSection}>
               <Button href={absoluteUrl("/")} style={button}>
-                Visit Squatter Away
+                Visit Tenant Radar
               </Button>
             </Section>
 
@@ -107,10 +107,10 @@ export default function WelcomeTemplate({
             <Text style={footerMuted}>
               Sent by{" "}
               <Link
-                href="https://squatter-away.sashflow.com"
+                href="https://tenant-radar.sashflow.com"
                 style={footerLink}
               >
-                Squatter Away
+                Tenant Radar
               </Link>
               {" · "}
               <Link href={absoluteUrl("/privacy")} style={footerLink}>

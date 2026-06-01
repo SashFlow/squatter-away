@@ -18,15 +18,15 @@ export default function PropertyManagersPage() {
       path="/for/property-managers"
       h1="Consistent screening across every door you manage"
       description=""
-      intro="When you're running applications across dozens of units, inconsistency is expensive. Squatter Away standardizes your screening playbook — same verification signals, same AI underwriter, same report format — whether you're leasing a studio or a four-bedroom."
+      intro="When you're running applications across dozens of units, inconsistency is expensive. Tenant Radar standardizes your screening playbook — same verification signals, same AI underwriter, same report format — whether you're leasing a studio or a four-bedroom."
       sections={[
         {
           heading: "One playbook, every applicant",
-          body: "Different leasing agents screening different ways creates liability and bad outcomes. Squatter Away applies the same verification framework to every applicant: identity cross-checks, employment validation, bank statement analysis, and social footprint review — delivered as a single underwriter-grade report.",
+          body: "Different leasing agents screening different ways creates liability and bad outcomes. Tenant Radar applies the same verification framework to every applicant: identity cross-checks, employment validation, bank statement analysis, and social footprint review — delivered as a single underwriter-grade report.",
         },
         {
           heading: "Speed without cutting corners",
-          body: "Good tenants don't wait around. Most Squatter Away reports return in hours, not days — so you can move qualified applicants through your pipeline before they sign elsewhere. Faster turnaround without skipping the signals that matter.",
+          body: "Good tenants don't wait around. Most Tenant Radar reports return in hours, not days — so you can move qualified applicants through your pipeline before they sign elsewhere. Faster turnaround without skipping the signals that matter.",
         },
         {
           heading: "Audit-ready documentation",

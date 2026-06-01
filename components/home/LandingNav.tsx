@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import { Menu, X } from "lucide-react";
-import { SquatterAwayLogo } from "@/components/logo";
+import { TenantRadarLogo } from "@/components/logo";
 
 const navLinks = [
   { href: "#how-it-works", label: "How it works" },
@@ -30,7 +30,7 @@ export function LandingNav() {
       }`}
     >
       <div className="mx-auto flex max-w-6xl h-8 items-center justify-between">
-        <SquatterAwayLogo size="md" variant="light" />
+        <TenantRadarLogo size="md" variant="light" />
 
         <div className="hidden items-center gap-8 sm:flex">
           {navLinks.map((link) => (

@@ -1,11 +1,11 @@
 export const siteConfig = {
-  name: "Squatter Away",
+  name: "Tenant Radar",
   url: process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000",
   description:
-    "Squatter Away is a consulate-grade AI tenant screening platform for U.S. landlords and property managers. Verify identity, employment, bank statements, and social profiles — get a decision-ready report in under an hour.",
+    "Tenant Radar is a consulate-grade AI tenant screening platform for U.S. landlords and property managers. Verify identity, employment, bank statements, and social profiles — get a decision-ready report in under an hour.",
   tagline: "Know your tenant before they sign.",
   locale: "en_US",
-  author: "Squatter Away",
+  author: "Tenant Radar",
   keywords: [
     "tenant screening",
     "AI tenant screening",

@@ -34,7 +34,7 @@ export function getAllPosts(): BlogPost[] {
       description: data.description as string,
       date: data.date as string,
       updated: data.updated as string | undefined,
-      author: (data.author as string) ?? "Squatter Away",
+      author: (data.author as string) ?? "Tenant Radar",
       tags: (data.tags as string[]) ?? [],
       content,
     };

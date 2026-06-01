@@ -18,7 +18,7 @@ export default function LandlordsPage() {
       path="/for/landlords"
       h1="Serious tenant screening for independent landlords"
       description=""
-      intro="You don't need a 500-unit portfolio to run a professional screening process. Squatter Away gives individual landlords consulate-grade verification — identity, employment, banking, and social signals — in a single report you can actually defend in court."
+      intro="You don't need a 500-unit portfolio to run a professional screening process. Tenant Radar gives individual landlords consulate-grade verification — identity, employment, banking, and social signals — in a single report you can actually defend in court."
       sections={[
         {
           heading: "Why credit scores aren't enough",
@@ -30,13 +30,13 @@ export default function LandlordsPage() {
         },
         {
           heading: "Pay per report, not per month",
-          body: "Enterprise screening platforms charge monthly minimums that don't make sense when you're leasing one or two units a year. Squatter Away is pay-per-report with no setup fees — built for landlords who want professional diligence without professional overhead.",
+          body: "Enterprise screening platforms charge monthly minimums that don't make sense when you're leasing one or two units a year. Tenant Radar is pay-per-report with no setup fees — built for landlords who want professional diligence without professional overhead.",
         },
       ]}
       faqs={[
         {
           q: "Do I need an LLC or property management company?",
-          a: "No. Squatter Away is built for individual landlords screening applicants for their own rental properties.",
+          a: "No. Tenant Radar is built for individual landlords screening applicants for their own rental properties.",
         },
         {
           q: "Is this FCRA compliant?",

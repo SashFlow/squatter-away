@@ -1,7 +1,7 @@
 import { ShieldCheck } from "lucide-react";
 import { cn } from "@/lib/utils";
 
-interface SquatterAwayLogoProps {
+interface TenantRadarLogoProps {
   size?: "sm" | "md" | "lg";
   variant?: "light" | "dark";
   showText?: boolean;
@@ -14,12 +14,12 @@ const sizeMap = {
   lg: { box: "h-10 w-10", icon: "h-5 w-5", text: "text-xl" },
 };
 
-export function SquatterAwayLogo({
+export function TenantRadarLogo({
   size = "md",
   variant = "dark",
   showText = true,
   className,
-}: SquatterAwayLogoProps) {
+}: TenantRadarLogoProps) {
   const s = sizeMap[size];
   const isDark = variant === "dark";
 
@@ -42,7 +42,7 @@ export function SquatterAwayLogo({
             isDark ? "text-white" : "text-foreground",
           )}
         >
-          Squatter<span className="text-lavender">Away</span>
+          Tenant<span className="text-lavender">Radar</span>
         </span>
       )}
     </div>

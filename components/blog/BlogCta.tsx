@@ -8,7 +8,7 @@ export function BlogCta() {
         Ready to screen smarter?
       </h2>
       <p className="mt-3 text-sm leading-[1.6] text-muted-foreground">
-        Join the Squatter Away founding batch and help shape AI tenant screening
+        Join the Tenant Radar founding batch and help shape AI tenant screening
         built for U.S. landlords.
       </p>
       <Link

@@ -2,7 +2,7 @@ import Link from "next/link";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 import type { Metadata } from "next";
 import { createPageMetadata } from "@/lib/metadata";
-import { SquatterAwayLogo } from "@/components/logo";
+import { TenantRadarLogo } from "@/components/logo";
 import { SiteFooter } from "@/components/site/SiteFooter";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { breadcrumbSchema, faqPageSchema } from "@/lib/seo/schemas";
@@ -10,22 +10,22 @@ import { breadcrumbSchema, faqPageSchema } from "@/lib/seo/schemas";
 export const metadata: Metadata = createPageMetadata({
   title: "Tenant Screening vs Credit Checks",
   description:
-    "Credit scores are one input — not a full tenant screening strategy. Learn how Squatter Away compares to traditional credit checks for U.S. landlords.",
+    "Credit scores are one input — not a full tenant screening strategy. Learn how Tenant Radar compares to traditional credit checks for U.S. landlords.",
   path: "/compare/credit-checks",
 });
 
 const faqs = [
   {
     q: "Should I still run a credit check?",
-    a: "Credit history remains a useful data point. Squatter Away complements credit checks by adding employment verification, bank statement analysis, identity cross-checks, and social footprint review — giving you a fuller picture for leasing decisions.",
+    a: "Credit history remains a useful data point. Tenant Radar complements credit checks by adding employment verification, bank statement analysis, identity cross-checks, and social footprint review — giving you a fuller picture for leasing decisions.",
   },
   {
     q: "Is a credit score enough for tenant screening?",
     a: "For most landlords, no. Credit scores measure debt repayment behavior, not rent payment reliability, income stability, or identity verification. A high score doesn't guarantee a good tenant, and a lower score doesn't always indicate risk.",
   },
   {
-    q: "How is Squatter Away different from SmartMove or RentSpree?",
-    a: "Traditional platforms center on credit and background pulls. Squatter Away synthesizes 12+ verification signals — including bank statements and employment — into a single AI-generated report designed for decision-ready screening.",
+    q: "How is Tenant Radar different from SmartMove or RentSpree?",
+    a: "Traditional platforms center on credit and background pulls. Tenant Radar synthesizes 12+ verification signals — including bank statements and employment — into a single AI-generated report designed for decision-ready screening.",
   },
 ];
 
@@ -51,7 +51,7 @@ export default function CompareCreditChecksPage() {
               <ArrowLeft className="h-4 w-4" />
               Home
             </Link>
-            <SquatterAwayLogo size="sm" variant="light" />
+            <TenantRadarLogo size="sm" variant="light" />
           </div>
         </header>
 
@@ -88,7 +88,7 @@ export default function CompareCreditChecksPage() {
               What comprehensive screening adds
             </h2>
             <p className="mt-4 text-base leading-[1.7] text-muted-foreground">
-              Squatter Away treats every applicant like a consulate treats a visa
+              Tenant Radar treats every applicant like a consulate treats a visa
               application: multiple independent signals verified and
               cross-referenced. Employment validation confirms role and tenure.
               Bank statement intelligence extracts income patterns, recurring
@@ -109,7 +109,7 @@ export default function CompareCreditChecksPage() {
                     Credit check
                   </th>
                   <th className="px-4 py-3 text-left font-semibold text-foreground">
-                    Squatter Away
+                    Tenant Radar
                   </th>
                 </tr>
               </thead>
@@ -121,11 +121,11 @@ export default function CompareCreditChecksPage() {
                   ["Identity cross-check", "Limited", "Multi-source verification"],
                   ["Social footprint", "Not included", "Public profile analysis"],
                   ["Turnaround", "Minutes", "Hours, not days"],
-                ].map(([signal, credit, squatter]) => (
+                ].map(([signal, credit, tenantRadar]) => (
                   <tr key={signal} className="border-b border-border last:border-0">
                     <td className="px-4 py-3 font-medium text-foreground">{signal}</td>
                     <td className="px-4 py-3">{credit}</td>
-                    <td className="px-4 py-3">{squatter}</td>
+                    <td className="px-4 py-3">{tenantRadar}</td>
                   </tr>
                 ))}
               </tbody>

@@ -2,7 +2,7 @@ import Link from "next/link";
 import { ArrowRight, ArrowLeft } from "lucide-react";
 import type { Metadata } from "next";
 import { createPageMetadata } from "@/lib/metadata";
-import { SquatterAwayLogo } from "@/components/logo";
+import { TenantRadarLogo } from "@/components/logo";
 import { SiteFooter } from "@/components/site/SiteFooter";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { breadcrumbSchema } from "@/lib/seo/schemas";
@@ -53,7 +53,7 @@ export function AudiencePage({
               <ArrowLeft className="h-4 w-4" />
               Home
             </Link>
-            <SquatterAwayLogo size="sm" variant="light" />
+            <TenantRadarLogo size="sm" variant="light" />
           </div>
         </header>
 

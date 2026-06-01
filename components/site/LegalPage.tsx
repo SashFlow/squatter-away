@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
-import { SquatterAwayLogo } from "@/components/logo";
+import { TenantRadarLogo } from "@/components/logo";
 import { SiteFooter } from "@/components/site/SiteFooter";
 
 export function LegalPage({
@@ -21,7 +21,7 @@ export function LegalPage({
             <ArrowLeft className="h-4 w-4" />
             Home
           </Link>
-          <SquatterAwayLogo size="sm" variant="light" />
+          <TenantRadarLogo size="sm" variant="light" />
         </div>
       </header>
       <main className="mx-auto max-w-3xl px-6 py-12 sm:px-10 sm:py-16">

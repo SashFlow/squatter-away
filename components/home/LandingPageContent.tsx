@@ -14,7 +14,7 @@ import {
   Home,
   CheckCircle2,
 } from "lucide-react";
-import { SquatterAwayLogo } from "@/components/logo";
+import { TenantRadarLogo } from "@/components/logo";
 import { ScreeningSourcesIllustration } from "@/components/home/ScreeningSourcesIllustration";
 import { HowItWorksPaths } from "@/components/home/HowItWorksIllustrations";
 import { LandingNav } from "@/components/home/LandingNav";
@@ -52,7 +52,7 @@ export function LandingPageContent() {
               <div className="flex flex-col gap-10 lg:flex-row lg:items-center lg:gap-12">
                 <div className="flex-1 max-w-xl">
                   <div className="mb-8">
-                    <SquatterAwayLogo size="lg" variant="light" />
+                    <TenantRadarLogo size="lg" variant="light" />
                   </div>
 
                   <div className="inline-flex items-center gap-2 rounded-full border border-lavender/40 bg-lavender/10 px-3 py-1 text-xs font-semibold text-foreground">
@@ -66,7 +66,7 @@ export function LandingPageContent() {
                   </h1>
 
                   <p className="mt-6 max-w-md text-base leading-[1.6] text-muted-foreground sm:mt-7 sm:text-lg">
-                    Squatter Away is a consulate-grade tenant screening platform
+                    Tenant Radar is a consulate-grade tenant screening platform
                     for individual landlords and SMBs. Share a link, let our AI
                     agent verify socials, bank statements, and employment, and
                     get a decision-ready report — fast.
@@ -144,7 +144,7 @@ export function LandingPageContent() {
               <p className="mx-auto mt-6 max-w-2xl text-base leading-[1.7] text-muted-foreground sm:text-lg">
                 A bad tenant costs the average US landlord upwards of $7,500 in
                 unpaid rent, legal fees, and repairs. Yet most screening tools
-                still hand you a one-line score and a thumbs up. Squatter Away
+                still hand you a one-line score and a thumbs up. Tenant Radar
                 treats every applicant the way a consulate treats a visa:
                 identity, history, income, and intent — verified,
                 cross-referenced, and delivered as one report you can actually

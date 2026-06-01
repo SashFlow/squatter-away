@@ -5,7 +5,7 @@ import { LegalPage } from "@/components/site/LegalPage";
 export const metadata: Metadata = createPageMetadata({
   title: "Privacy Policy",
   description:
-    "How Squatter Away collects, uses, and protects applicant and landlord data during tenant screening.",
+    "How Tenant Radar collects, uses, and protects applicant and landlord data during tenant screening.",
   path: "/privacy",
 });
 
@@ -16,7 +16,7 @@ export default function PrivacyPage() {
         <strong>Last updated:</strong> June 1, 2026
       </p>
       <p>
-        Squatter Away (&quot;we,&quot; &quot;us,&quot; or &quot;our&quot;)
+        Tenant Radar (&quot;we,&quot; &quot;us,&quot; or &quot;our&quot;)
         provides AI-powered tenant screening services for U.S. landlords,
         property managers, and rental operators. This Privacy Policy explains
         how we collect, use, disclose, and safeguard information when you use

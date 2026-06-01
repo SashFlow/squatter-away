@@ -7,7 +7,7 @@ import { BlogLayout } from "@/components/blog/BlogLayout";
 export const metadata: Metadata = createPageMetadata({
   title: "Blog — Tenant Screening Guides for U.S. Landlords",
   description:
-    "Practical guides on tenant screening, employment verification, bank statement analysis, and AI-powered landlord tools from the Squatter Away team.",
+    "Practical guides on tenant screening, employment verification, bank statement analysis, and AI-powered landlord tools from the Tenant Radar team.",
   path: "/blog",
 });
 

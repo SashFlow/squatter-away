@@ -6,7 +6,7 @@ export type Faq = {
 export const faqs: Faq[] = [
   {
     q: "Is this available in the United States?",
-    a: "Yes — Squatter Away is built for the U.S. rental market first, with workflows and data sources tuned to U.S. landlords, property managers, and SMB operators.",
+    a: "Yes — Tenant Radar is built for the U.S. rental market first, with workflows and data sources tuned to U.S. landlords, property managers, and SMB operators.",
   },
   {
     q: "How is this different from a credit check?",

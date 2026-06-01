@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
-import { SquatterAwayLogo } from "@/components/logo";
+import { TenantRadarLogo } from "@/components/logo";
 import { SiteFooter } from "@/components/site/SiteFooter";
 
 export function BlogLayout({
@@ -21,7 +21,7 @@ export function BlogLayout({
             <ArrowLeft className="h-4 w-4" />
             Blog
           </Link>
-          <SquatterAwayLogo size="sm" variant="light" />
+          <TenantRadarLogo size="sm" variant="light" />
         </div>
       </header>
       {breadcrumbs && breadcrumbs.length > 0 && (

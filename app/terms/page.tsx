@@ -5,7 +5,7 @@ import { LegalPage } from "@/components/site/LegalPage";
 export const metadata: Metadata = createPageMetadata({
   title: "Terms of Service",
   description:
-    "Terms governing use of Squatter Away's tenant screening platform for U.S. landlords and property managers.",
+    "Terms governing use of Tenant Radar's tenant screening platform for U.S. landlords and property managers.",
   path: "/terms",
 });
 
@@ -17,7 +17,7 @@ export default function TermsPage() {
       </p>
       <p>
         These Terms of Service (&quot;Terms&quot;) govern your access to and use
-        of Squatter Away&apos;s website, early access program, and tenant
+        of Tenant Radar&apos;s website, early access program, and tenant
         screening platform. By using our services, you agree to these Terms.
       </p>
 
@@ -35,7 +35,7 @@ export default function TermsPage() {
         The service
       </h2>
       <p>
-        Squatter Away provides AI-assisted tenant verification reports based on
+        Tenant Radar provides AI-assisted tenant verification reports based on
         applicant-submitted information and authorized data sources. Reports are
         decision-support tools — you remain responsible for final leasing
         decisions and compliance with applicable screening regulations.
@@ -63,7 +63,7 @@ export default function TermsPage() {
         Limitation of liability
       </h2>
       <p>
-        To the maximum extent permitted by law, Squatter Away is not liable for
+        To the maximum extent permitted by law, Tenant Radar is not liable for
         indirect, incidental, or consequential damages arising from use of
         screening reports. Our total liability is limited to fees paid for the
         specific report giving rise to the claim.

@@ -4,7 +4,7 @@ import { createPageMetadata } from "@/lib/metadata";
 export const metadata: Metadata = createPageMetadata({
   title: "Join the Founding Batch",
   description:
-    "Help shape Squatter Away — the AI tenant screening platform built for U.S. landlords. Eight quick sections, your answers go straight to the team.",
+    "Help shape Tenant Radar — the AI tenant screening platform built for U.S. landlords. Eight quick sections, your answers go straight to the team.",
   path: "/early-access",
   noIndex: true,
 });

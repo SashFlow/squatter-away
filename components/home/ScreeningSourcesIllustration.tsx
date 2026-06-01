@@ -52,7 +52,7 @@ export function ScreeningSourcesIllustration() {
       <svg
         viewBox="0 0 440 440"
         className="h-auto w-full"
-        aria-label="Sources of information validated by Squatter Away"
+        aria-label="Sources of information validated by Tenant Radar"
       >
         <defs>
           <radialGradient id="centerGlow" cx="50%" cy="50%" r="50%">

@@ -46,7 +46,7 @@ function StepVisual({ pathId, index }: { pathId: PathId; index: number }) {
           <div className="flex items-center gap-2 rounded-lg bg-lavender/20 px-3 py-2.5">
             <Link2 className="h-4 w-4 shrink-0 text-lavender" strokeWidth={2} />
             <span className="truncate font-mono text-xs text-white/90">
-              squatter-away.sashflow.com/s/a8k2…
+              tenant-radar.sashflow.com/s/a8k2…
             </span>
           </div>
         </div>

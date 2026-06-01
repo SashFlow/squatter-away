@@ -7,7 +7,7 @@ After deploying to production, complete these steps to activate search discovery
 Set `NEXT_PUBLIC_SITE_URL` to your production domain (see `.env.example`):
 
 ```bash
-NEXT_PUBLIC_SITE_URL=https://squatteraway.com
+NEXT_PUBLIC_SITE_URL=https://tenantradar.com
 ```
 
 This drives canonical URLs, Open Graph tags, sitemap entries, and robots.txt.
@@ -17,7 +17,7 @@ This drives canonical URLs, Open Graph tags, sitemap entries, and robots.txt.
 1. Go to [Google Search Console](https://search.google.com/search-console)
 2. Add your property (domain or URL prefix)
 3. Verify ownership (DNS TXT record recommended for domain properties)
-4. Submit sitemap: `https://squatter-away.sashflow.com/sitemap.xml`
+4. Submit sitemap: `https://tenant-radar.sashflow.com/sitemap.xml`
 5. Request indexing for `/` and key pages (`/blog`, `/for/landlords`, etc.)
 
 ## Verify metadata
