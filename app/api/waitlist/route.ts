@@ -38,21 +38,24 @@ function findName(flattened: Record<string, string>): string {
 }
 
 export async function POST(request: NextRequest) {
-  let ip: string;
   const xForwardedForHeader = request.headers.get("x-forwarded-for");
-  if (xForwardedForHeader) {
-    ip = xForwardedForHeader.split(",")[0]?.trim();
-  } else {
-    ip = request.headers.get("x-real-ip")?.trim() || "127.0.0.1";
-  }
+  const ip =
+    xForwardedForHeader?.split(",")[0]?.trim() ||
+    request.headers.get("x-real-ip")?.trim() ||
+    "127.0.0.1";
 
   const results = await ratelimit.limit(ip);
 
   if (!results.success) {
     return NextResponse.json({ error: "Too many requests" }, { status: 429 });
   }
-    const body: Record<string, string> = await request.json();
 
+  let body: Record<string, unknown>;
+  try {
+    body = await request.json();
+  } catch {
+    return NextResponse.json({ error: "Invalid JSON body" }, { status: 400 });
+  }
 
   if (!body || typeof body !== "object" || Array.isArray(body)) {
     return NextResponse.json(
@@ -62,25 +65,30 @@ export async function POST(request: NextRequest) {
   }
 
   body.submittedAt = new Date().toISOString();
+  const flattened = flattenObject(body);
 
   try {
-    await appendFlattenedRow(body);
-  } catch {
+    await appendFlattenedRow(flattened);
+  } catch (error) {
+    console.error("Failed to save waitlist entry:", error);
     return NextResponse.json(
       { error: "Failed to save to waitlist" },
       { status: 500 },
     );
   }
 
-  const { error } = await resend.emails.send({
-    from: "Waitlist Template <no-reply@sashflow.com>",
-    to: body.email,
-    subject: "Welcome to the platform",
-    react: WelcomeTemplate({ userFirstName: body.name }),
-  });
+  const email = findEmail(flattened);
+  if (email && EMAIL_REGEX.test(email)) {
+    const { error } = await resend.emails.send({
+      from: "Waitlist Template <no-reply@sashflow.com>",
+      to: email,
+      subject: "Welcome to the platform",
+      react: WelcomeTemplate({ userFirstName: findName(flattened) }),
+    });
 
-  if (error) {
-    return NextResponse.json({ error: error.message }, { status: 500 });
+    if (error) {
+      console.error("Failed to send waitlist welcome email:", error);
+    }
   }
 
   return NextResponse.json(
