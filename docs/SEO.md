@@ -17,7 +17,7 @@ This drives canonical URLs, Open Graph tags, sitemap entries, and robots.txt.
 1. Go to [Google Search Console](https://search.google.com/search-console)
 2. Add your property (domain or URL prefix)
 3. Verify ownership (DNS TXT record recommended for domain properties)
-4. Submit sitemap: `https://squatteraway.com/sitemap.xml`
+4. Submit sitemap: `https://squatter-away.sashflow.com/sitemap.xml`
 5. Request indexing for `/` and key pages (`/blog`, `/for/landlords`, etc.)
 
 ## Verify metadata

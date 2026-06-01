@@ -16,10 +16,11 @@ export default function PrivacyPage() {
         <strong>Last updated:</strong> June 1, 2026
       </p>
       <p>
-        Squatter Away (&quot;we,&quot; &quot;us,&quot; or &quot;our&quot;) provides AI-powered tenant
-        screening services for U.S. landlords, property managers, and rental
-        operators. This Privacy Policy explains how we collect, use, disclose, and
-        safeguard information when you use our website and screening platform.
+        Squatter Away (&quot;we,&quot; &quot;us,&quot; or &quot;our&quot;)
+        provides AI-powered tenant screening services for U.S. landlords,
+        property managers, and rental operators. This Privacy Policy explains
+        how we collect, use, disclose, and safeguard information when you use
+        our website and screening platform.
       </p>
 
       <h2 className="text-lg font-semibold text-foreground pt-4">
@@ -29,8 +30,9 @@ export default function PrivacyPage() {
         We collect information you provide directly (account details, survey
         responses, contact information) and information submitted by rental
         applicants through screening links (identity documents, employment
-        details, bank statements, and social profile references). We also collect
-        standard usage data such as IP address, browser type, and pages visited.
+        details, bank statements, and social profile references). We also
+        collect standard usage data such as IP address, browser type, and pages
+        visited.
       </p>
 
       <h2 className="text-lg font-semibold text-foreground pt-4">
@@ -62,17 +64,17 @@ export default function PrivacyPage() {
         controls.
       </p>
 
-      <h2 className="text-lg font-semibold text-foreground pt-4">Your rights</h2>
+      <h2 className="text-lg font-semibold text-foreground pt-4">
+        Your rights
+      </h2>
       <p>
         Depending on your state of residence, you may have rights to access,
         correct, or delete personal information we hold about you. Contact us at
-        privacy@squatteraway.com to submit a request.
+        sai@sashflow.com to submit a request.
       </p>
 
       <h2 className="text-lg font-semibold text-foreground pt-4">Contact</h2>
-      <p>
-        Questions about this policy? Email privacy@squatteraway.com.
-      </p>
+      <p>Questions about this policy? Email sai@sashflow.com.</p>
     </LegalPage>
   );
 }

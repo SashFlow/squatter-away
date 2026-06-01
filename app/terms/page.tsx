@@ -16,12 +16,14 @@ export default function TermsPage() {
         <strong>Last updated:</strong> June 1, 2026
       </p>
       <p>
-        These Terms of Service (&quot;Terms&quot;) govern your access to and use of
-        Squatter Away&apos;s website, early access program, and tenant screening
-        platform. By using our services, you agree to these Terms.
+        These Terms of Service (&quot;Terms&quot;) govern your access to and use
+        of Squatter Away&apos;s website, early access program, and tenant
+        screening platform. By using our services, you agree to these Terms.
       </p>
 
-      <h2 className="text-lg font-semibold text-foreground pt-4">Eligibility</h2>
+      <h2 className="text-lg font-semibold text-foreground pt-4">
+        Eligibility
+      </h2>
       <p>
         Our services are intended for landlords, property managers, and rental
         operators conducting lawful tenant screening in the United States. You
@@ -29,7 +31,9 @@ export default function TermsPage() {
         fair-housing laws when using screening reports.
       </p>
 
-      <h2 className="text-lg font-semibold text-foreground pt-4">The service</h2>
+      <h2 className="text-lg font-semibold text-foreground pt-4">
+        The service
+      </h2>
       <p>
         Squatter Away provides AI-assisted tenant verification reports based on
         applicant-submitted information and authorized data sources. Reports are
@@ -66,9 +70,7 @@ export default function TermsPage() {
       </p>
 
       <h2 className="text-lg font-semibold text-foreground pt-4">Contact</h2>
-      <p>
-        Questions about these Terms? Email legal@squatteraway.com.
-      </p>
+      <p>Questions about these Terms? Email sai@sashflow.com.</p>
     </LegalPage>
   );
 }

@@ -1,6 +1,7 @@
 import WelcomeTemplate from "@/template/welcome";
 import { flattenObject } from "@/lib/flatten";
 import { appendFlattenedRow } from "@/lib/google-sheets";
+import { siteConfig } from "@/lib/site";
 import { Ratelimit } from "@upstash/ratelimit";
 import { Redis } from "@upstash/redis";
 import { NextRequest, NextResponse } from "next/server";
@@ -80,9 +81,9 @@ export async function POST(request: NextRequest) {
   const email = findEmail(flattened);
   if (email && EMAIL_REGEX.test(email)) {
     const { error } = await resend.emails.send({
-      from: "Waitlist Template <no-reply@sashflow.com>",
+      from: `${siteConfig.name} <no-reply@sashflow.com>`,
       to: email,
-      subject: "Welcome to the platform",
+      subject: `You're on the ${siteConfig.name} waitlist`,
       react: WelcomeTemplate({ userFirstName: findName(flattened) }),
     });
 
