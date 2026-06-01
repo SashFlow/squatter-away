@@ -106,10 +106,7 @@ export default function WelcomeTemplate({
             </Text>
             <Text style={footerMuted}>
               Sent by{" "}
-              <Link
-                href="https://tenant-radar.sashflow.com"
-                style={footerLink}
-              >
+              <Link href="https://tenantradar.sashflow.com" style={footerLink}>
                 Tenant Radar
               </Link>
               {" · "}
