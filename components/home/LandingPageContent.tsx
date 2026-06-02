@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import {
   ArrowRight,
   ShieldCheck,
@@ -157,6 +158,38 @@ export function LandingPageContent() {
                 </Link>
                 .
               </p>
+            </div>
+          </section>
+
+          <section className="relative pb-20 sm:pb-28">
+            <div className="mx-auto max-w-6xl px-6 sm:px-10">
+              <div className="grid items-center gap-10 lg:grid-cols-2 lg:gap-14">
+                <div>
+                  <p className="mb-3 text-xs font-semibold uppercase tracking-widest text-lavender">
+                    What you receive
+                  </p>
+                  <h2 className="text-3xl font-bold leading-[1.08] tracking-[-0.02em] text-foreground sm:text-4xl">
+                    A decision-ready report.
+                  </h2>
+                  <p className="mt-4 max-w-xl text-base leading-[1.7] text-muted-foreground sm:text-lg">
+                    Identity, employment, and banking signals — summarized into a
+                    single verdict with clear supporting evidence.
+                  </p>
+                </div>
+
+                <div className="rounded-[18px] border border-border bg-secondary/30 p-3 sm:p-4">
+                  <div className="relative overflow-hidden rounded-[14px] bg-background">
+                    <Image
+                      src="/d16deccedacf4928b0cc1b67400028a5.jpg"
+                      alt="Example Tenant Radar screening report output"
+                      width={1024}
+                      height={576}
+                      className="h-auto w-full"
+                      priority
+                    />
+                  </div>
+                </div>
+              </div>
             </div>
           </section>
 
