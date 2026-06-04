@@ -70,7 +70,7 @@ export default function TermsPage() {
       </p>
 
       <h2 className="text-lg font-semibold text-foreground pt-4">Contact</h2>
-      <p>Questions about these Terms? Email sai@sashflow.com.</p>
+      <p>Questions about these Terms? Email growth@sashflow.com.</p>
     </LegalPage>
   );
 }

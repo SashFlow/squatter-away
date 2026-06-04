@@ -70,11 +70,11 @@ export default function PrivacyPage() {
       <p>
         Depending on your state of residence, you may have rights to access,
         correct, or delete personal information we hold about you. Contact us at
-        sai@sashflow.com to submit a request.
+        growth@sashflow.com to submit a request.
       </p>
 
       <h2 className="text-lg font-semibold text-foreground pt-4">Contact</h2>
-      <p>Questions about this policy? Email sai@sashflow.com.</p>
+      <p>Questions about this policy? Email growth@sashflow.com.</p>
     </LegalPage>
   );
 }

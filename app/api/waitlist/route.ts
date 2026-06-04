@@ -81,7 +81,7 @@ export async function POST(request: NextRequest) {
   const email = findEmail(flattened);
   if (email && EMAIL_REGEX.test(email)) {
     const { error } = await resend.emails.send({
-      from: `${siteConfig.name} <no-reply@sashflow.com>`,
+      from: `${siteConfig.name} <growth@sashflow.com>`,
       to: email,
       subject: `You're on the ${siteConfig.name} waitlist`,
       react: WelcomeTemplate({ userFirstName: findName(flattened) }),

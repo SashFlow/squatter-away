@@ -90,8 +90,8 @@ export default function WelcomeTemplate({
 
             <Text style={muted}>
               Questions? Reply to this email or reach us at{" "}
-              <Link href="mailto:sai@sashflow.com" style={link}>
-                sai@sashflow.com
+              <Link href="mailto:growth@sashflow.com" style={link}>
+                growth@sashflow.com
               </Link>
               .
             </Text>
