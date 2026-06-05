@@ -36,6 +36,7 @@ export default function RootLayout({
     <html
       lang="en"
       suppressHydrationWarning
+      data-scroll-behavior="smooth"
       className={`${poppins.variable} h-full antialiased`}
     >
       <body className={`${poppins.className} min-h-full flex flex-col`}>
