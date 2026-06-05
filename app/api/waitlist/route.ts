@@ -4,6 +4,7 @@ import { appendFlattenedRow } from "@/lib/google-sheets";
 import { siteConfig } from "@/lib/site";
 import { Ratelimit } from "@upstash/ratelimit";
 import { Redis } from "@upstash/redis";
+import { track } from "@vercel/analytics/server";
 import { NextRequest, NextResponse } from "next/server";
 import { Resend } from "resend";
 
@@ -79,6 +80,7 @@ export async function POST(request: NextRequest) {
   }
 
   const email = findEmail(flattened);
+  await track("early_access_saved", { has_email: !!(email && EMAIL_REGEX.test(email)) });
   if (email && EMAIL_REGEX.test(email)) {
     const { error } = await resend.emails.send({
       from: `${siteConfig.name} <growth@sashflow.com>`,

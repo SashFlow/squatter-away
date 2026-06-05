@@ -36,7 +36,10 @@ export default function CompareCreditChecksPage() {
         data={[
           breadcrumbSchema([
             { name: "Home", path: "/" },
-            { name: "Tenant Screening vs Credit Checks", path: "/compare/credit-checks" },
+            {
+              name: "Tenant Screening vs Credit Checks",
+              path: "/compare/credit-checks",
+            },
           ]),
           faqPageSchema(faqs),
         ]}
@@ -115,15 +118,40 @@ export default function CompareCreditChecksPage() {
               </thead>
               <tbody className="text-muted-foreground">
                 {[
-                  ["Payment history", "Debt accounts only", "Rent-relevant banking patterns"],
-                  ["Income verification", "Not included", "Bank statement + employment"],
-                  ["Employment validation", "Not included", "Employer, role, tenure"],
-                  ["Identity cross-check", "Limited", "Multi-source verification"],
-                  ["Social footprint", "Not included", "Public profile analysis"],
+                  [
+                    "Payment history",
+                    "Debt accounts only",
+                    "Rent-relevant banking patterns",
+                  ],
+                  [
+                    "Income verification",
+                    "Not included",
+                    "Bank statement + employment",
+                  ],
+                  [
+                    "Employment validation",
+                    "Not included",
+                    "Employer, role, tenure",
+                  ],
+                  [
+                    "Identity cross-check",
+                    "Limited",
+                    "Multi-source verification",
+                  ],
+                  [
+                    "Social footprint",
+                    "Not included",
+                    "Public profile analysis",
+                  ],
                   ["Turnaround", "Minutes", "Hours, not days"],
                 ].map(([signal, credit, tenantRadar]) => (
-                  <tr key={signal} className="border-b border-border last:border-0">
-                    <td className="px-4 py-3 font-medium text-foreground">{signal}</td>
+                  <tr
+                    key={signal}
+                    className="border-b border-border last:border-0"
+                  >
+                    <td className="px-4 py-3 font-medium text-foreground">
+                      {signal}
+                    </td>
                     <td className="px-4 py-3">{credit}</td>
                     <td className="px-4 py-3">{tenantRadar}</td>
                   </tr>
@@ -152,7 +180,10 @@ export default function CompareCreditChecksPage() {
 
           <p className="mt-10 text-sm text-muted-foreground">
             Read more:{" "}
-            <Link href="/blog/tenant-screening-vs-credit-check" className="underline">
+            <Link
+              href="/blog/tenant-screening-vs-credit-check"
+              className="underline"
+            >
               Tenant screening vs credit check: a deep dive
             </Link>
           </p>
@@ -165,7 +196,7 @@ export default function CompareCreditChecksPage() {
               href="/early-access"
               className="group mt-6 inline-flex items-center gap-2 rounded-[10px] bg-lavender px-6 py-3 text-sm font-semibold text-foreground"
             >
-              Join the founding batch
+              Lets solve your problems
               <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
             </Link>
           </div>

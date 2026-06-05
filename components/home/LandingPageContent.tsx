@@ -23,6 +23,7 @@ import { FaqAccordion } from "@/components/home/FaqAccordion";
 import { faqs } from "@/lib/content/faqs";
 import { howItWorks, features, audiences, stats } from "@/lib/content/home";
 import { SiteFooter } from "@/components/site/SiteFooter";
+import { CalFloatingButton } from "@/components/home/CalFloatingButton";
 
 const featureIcons = [AtSign, Banknote, Briefcase, Bot, Clock, Lock];
 const audienceIcons = [Home, Building2, Users];
@@ -30,6 +31,7 @@ const audienceIcons = [Home, Building2, Users];
 export function LandingPageContent() {
   return (
     <div className="min-h-screen bg-background">
+      <CalFloatingButton />
       <LandingNav />
 
       <main>
@@ -78,7 +80,7 @@ export function LandingPageContent() {
                       href="/early-access"
                       className="group inline-flex items-center justify-center gap-2 rounded-[10px] bg-foreground px-7 py-3 text-base font-semibold text-background transition-all hover:opacity-90"
                     >
-                      Join the founding batch{" "}
+                      Lets solve your problems{" "}
                       <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
                     </Link>
                     <a
@@ -172,8 +174,8 @@ export function LandingPageContent() {
                     A decision-ready report.
                   </h2>
                   <p className="mt-4 max-w-xl text-base leading-[1.7] text-muted-foreground sm:text-lg">
-                    Identity, employment, and banking signals — summarized into a
-                    single verdict with clear supporting evidence.
+                    Identity, employment, and banking signals — summarized into
+                    a single verdict with clear supporting evidence.
                   </p>
                 </div>
 
@@ -325,7 +327,7 @@ export function LandingPageContent() {
                   href="/early-access"
                   className="group mt-10 inline-flex items-center justify-center gap-2 rounded-[10px] bg-lavender px-8 py-3 text-base font-semibold text-foreground transition-all hover:shadow-lg hover:shadow-lavender/25"
                 >
-                  Join the founding batch{" "}
+                  Lets solve your problems{" "}
                   <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
                 </Link>
               </div>
